@@ -1,13 +1,12 @@
 <?php
 
-	/**********************************************************************
-	*  Author: Arun Vijayan (arunvijayan[]gmail.com)
-	*  Web...: http://www.webforth.com/handsetsetect
-	*  Name..: HandSetDetect
-	*  Desc..: Handset Detection API client
-	*
-	*/
-
+/**********************************************************************
+*  Author: Arun Vijayan (arunvijayan[]gmail.com)
+*  Web...: http://www.webforth.com/handsetdetect
+*  Name..: HandSetDetect
+*  Desc..: Handset Detection API client.
+*
+*/
 
 class HandsetDetect{
 
@@ -20,6 +19,7 @@ class HandsetDetect{
 		  $this->hd_server = $hd_server;
 		}
 
+	// Using JSON. You can use XML also if you want.
 	function sendjson($data, $url) {
 		
 		$data['apikey'] = $this->apikey;
@@ -63,7 +63,7 @@ class HandsetDetect{
 
 
 
-}// end class
+}// end HandsetDetect class
 
 
 ?>
