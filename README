@@ -1,5 +1,5 @@
 *************************************************************************************
 
-DEVICEDETECT v0.9 is a PHP application to detect which Mobile handset and browser is used to view your website. It uses the detection API from HandsetDetection.com which supports 7000 handsets currently. This script uses CURL instead of PEAR to make the webservice calls -- Should be easy to use and lightweight. Just signup at handsetdetection.com to get the API Key and replace it in example.php. 
+HandsetDetect v0.9 is a PHP application to detect which Mobile handset and browser is used to view your website. It uses the detection API from HandsetDetection.com which supports 7000 handsets currently. This script uses CURL instead of PEAR to make the webservice calls -- Should be easy to use and lightweight. Just signup at handsetdetection.com to get the API Key and replace it in example.php. 
 
 *************************************************************************************
