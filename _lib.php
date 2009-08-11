@@ -13,11 +13,11 @@ class HandsetDetect{
 	var $apikey;
 	var $hd_server;
 
-	function __construct($apikey, $hd_server)
-		{
-		  $this->apikey = $apikey;
-		  $this->hd_server = $hd_server;
-		}
+	function __construct($apikey, $hd_server){
+
+		$this->apikey = $apikey;
+		$this->hd_server = $hd_server;
+	}
 
 	// Using JSON. You can use XML also if you want.
 	function sendjson($data, $url) {
@@ -42,8 +42,7 @@ class HandsetDetect{
 			$data['ipaddress']	= $_SERVER['REMOTE_ADDR'];
 			$data['options']	= "geoip, product_info, display";
 			$data = array_merge ($data, $_SERVER);
-
-			print_r( $data);
+			
 			return $this->sendjson($data, $this->hd_server."/devices/detect.json");
 		}
 
