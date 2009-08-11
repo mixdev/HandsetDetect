@@ -41,7 +41,9 @@ class HandsetDetect{
 			$data['User-Agent'] = $_SERVER['HTTP_USER_AGENT'];
 			$data['ipaddress']	= $_SERVER['REMOTE_ADDR'];
 			$data['options']	= "geoip, product_info, display";
-			$data = array_merge ($data, $_SERVER);
+			
+			// Sometimes this doesnt work
+			//$data = array_merge ($data, $_SERVER);
 			
 			return $this->sendjson($data, $this->hd_server."/devices/detect.json");
 		}
